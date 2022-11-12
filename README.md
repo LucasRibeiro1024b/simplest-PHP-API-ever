@@ -1,6 +1,11 @@
 # The Simplest API ever in PHP
 
-Base url:
+How-to run
+```console
+$ php -S localhost:8080
+```
+
+Base url
 ```
     http://localhost/index.php/{path}/{action}
 ```
