@@ -4,17 +4,29 @@ header("Content-type: application/json; charset=utf-8");
 
 require_once "catBreeds.php";
 
-$response;
+$response = [];
 
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri = explode( '/', $uri );
 
-if ((isset($uri[2]) && $uri[2] != "cats") || !isset($uri[2])) {
+if ((isset($uri[2]) && $uri[2] != "cats") || !isset($uri[2], $uri[3])) {
     header("HTTP/1.1 404 Not Found");
     exit();
 }
-
-$response["breeds"] = $catBreeds;
+else {
+    switch ($uri[3]) {
+        /**
+         * /cats/list
+         */
+        case "list":
+            $response["breeds"] = $catBreeds;
+            break;
+        
+        default:
+            # code...
+            break;
+    }
+}
 
 echo json_encode($response);
 
