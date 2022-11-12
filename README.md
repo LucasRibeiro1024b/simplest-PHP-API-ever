@@ -7,7 +7,7 @@ $ php -S localhost:8080
 
 Base url
 ```
-    http://localhost/index.php/{path}/{action}
+http://localhost/index.php/{path}/{action}
 ```
 
 <table>
