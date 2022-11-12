@@ -8,7 +8,7 @@ Base url:
 <table>
     <tr>
         <th>METHOD</th>
-        <th>ROUTE</th>
+        <th>PATH</th>
         <th>DESCRIPTION</th>
     </tr>
     <tr>
