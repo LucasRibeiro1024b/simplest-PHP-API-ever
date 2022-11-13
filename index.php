@@ -22,8 +22,16 @@ else {
             $response["breeds"] = $catBreeds;
             break;
         
-        default:
-            # code...
+        /**
+         * /cats/add
+         */
+        case "add":
+            array_push($catBreeds, $_POST["catBreed"]);
+            $response["catBreeds"] = $catBreeds;
+            $response[] = array(
+                "status" => 200,
+                "message" => "Added new cat breed succesfully."
+            );
             break;
     }
 }
