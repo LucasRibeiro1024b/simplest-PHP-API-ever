@@ -1,0 +1,15 @@
+{
+    "name": "lucas/simplestapi",
+    "autoload": {
+        "psr-4": {
+            "Lucas\\Simplestapi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "ribeiro",
+            "email": "lucasribeiro1024b@gmail.com"
+        }
+    ],
+    "require": {}
+}
